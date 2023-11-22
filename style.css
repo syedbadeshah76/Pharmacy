@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: sans-serif;
+}
+body{
+  /* width: 100%; */
+  background-color: rgb(235, 235, 235);
+
+}
+label.logo
+{  
+    color: rgb(0, 57, 243);
+    font-size: 29px;
+    line-height : 70px;
+    font-weight : bold;
+    float: left ;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 50px;
+    transition: .4s linear;
+    /* font-style:initial; */
+}
+.logo span{
+    transition: .4s linear;
+    color: red;
+}
+.logo:hover{
+    color: red
+}
+.logo span:hover{
+    color: blue;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul{
+    display: flex;
+    justify-content: space-between;  
+    margin-right: 40px ;
+}
+li{
+    
+    margin: 0 20px;
+}
+nav ul li a{
+    text-decoration:none;
+    color:rgb(73, 68, 60);
+    font-family: sans-serif;
+    font-weight: bold;
+    border-radius: 25px;
+    font-size: 20px;
+    transition: .3s ease-in;
+    /* float: left 10px; */
+}
+nav ul li a:hover{
+    color:darkgreen;
+    text-decoration: underline;
+   
+}
+.box{
+    
+    height: 40px;
+    width: 100%;
+    padding: 2%;
+    background-image: linear-gradient(rgba(0,8,51,0.9),rgba(rgba(0,8,51,0.9)));
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.search-bar
+{
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    /* background-color: blue; */
+    
+}
+
+.input{
+    background: transparent;
+    transition: .3s ease    ;
+    width:900px ;
+    height: 39px;
+    background: white;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    border-radius: 90px ;
+    padding: 10px 20px;
+    /* flex: 8; */
+    /* border: 0; */
+    border: none;
+    /* outline: none; */
+    padding: 10px 10px;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.751);
+    opacity: 0;
+    transform-origin: right 20px;
+    transform: scale(.1);
+    /* transition: .3s linear; */
+}
+.search-bar input:hover{
+    /* background-color: rgba(68, 93, 214, 0.812); */
+    box-shadow: 0 0px 10px rgba(0,0,0,0.2);
+}
+.icon{
+    /* background-color: rgb(255, 255, 255); */
+    /* position: absolute; */
+    /* font-size: 32px; */
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 20px;
+    /* right: 5px;
+    top: 5px; */
+    margin-top: -3px;
+
+    transition: .2s linear;
+    background-color: rgb(235, 235, 235);
+}
+.icon:hover{
+    background-color: white;
+    transform: scale(1.5);
+}
+
+.searchbtn{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding-top:4px;
+   
+    font-size: 20px;
+}
+
+.product
+{
+    text-align:center ;
+    height: 60px;
+    
+}
+.tablets-container
+{
+    margin: 50px 0;
+    /* background-color: blue; */
+    /* margin: 60px; */
+    padding: 0 180px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+    /* height: 150px; */
+    /* padding: 0px; */
+    /* overflow: auto; */
+}
+.tablets{
+    width: 250px;
+    height: 200px;
+    padding: 15px 15px;
+    margin: 10px;
+    background-color: white;
+    /* border: 1px solid black; */
+    box-shadow: 0 0px 15px rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 8px  ;
+
+    transition: .2s ease;
+}
+
+.tablet-images{
+    margin-bottom: 6px;
+    width: 200px;
+    height: 140px;
+}
+.tablets:hover{
+    box-shadow: 0 0px 15px rgba(0, 0, 0, 0.4);
+    transform: scale(1.1);
+}
+.tablets p{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.product:hover{
+    color: navy;
+    transition: 1s;
+}
+.section1{
+    margin-top: 50px;
+}
+.footer{
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+    background-color: rgb(215, 215, 215);
+}
+.display{
+    opacity: 1;
+    transform: scale(1);
+}
+@media only screen and (max-width:1450px)
+{
+    .tablets-container{
+        padding: 0 70px;
+    }
+}
+@media only screen and (max-width:1250px)
+{
+    .tablets-container{
+        padding: 0 30px;
+    }
+}
+@media only screen and (max-width:1150px)
+{
+    .tablets-container{
+        padding: 0 180px;
+    }
+}
+@media only screen and (max-width:910px)
+{
+    .tablets-container{
+        padding: 0 80px;
+    }
+}
+@media only screen and (max-width:800px)
+{
+    ul{
+        margin-right: 10px;
+    }
+    li{
+        margin: 0 10px;
+    }
+    nav ul li a{
+        font-size: 15px;
+        font-weight: 100;
+    }
+    label.logo{
+        font-size: 18px;
+    }
+}
