@@ -179,6 +179,25 @@ nav ul li a:hover{
     /* padding: 0px; */
     /* overflow: auto; */
 }
+.content{
+    padding-top: 150px;
+    padding-left: 50px;
+    font-family: 'montserrat';
+    font-size: 35px;
+}
+.sp1{
+    color: red;
+    margin-right: 90px;
+
+}
+.sp2{
+    color: green;
+    margin-left: 167px;
+}
+.sp0{
+    color: blue ;
+    margin-left: 68px;
+}
 .tablets{
     width: 250px;
     height: 200px;
@@ -191,6 +210,7 @@ nav ul li a:hover{
     border-radius: 8px  ;
 
     transition: .2s ease;
+    margin: 0 auto;
 }
 
 .tablet-images{
@@ -231,6 +251,17 @@ nav ul li a:hover{
     color: green;
 
 }
+.menu-icon i
+{
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    border-radius: 50%;
+        padding: 10px;
+        border: 1px solid gray;
+    display:none ;
+}
+
 @media only screen and (max-width:1450px)
 {
     .tablets-container{
@@ -245,8 +276,21 @@ nav ul li a:hover{
 }
 @media only screen and (max-width:1150px)
 {
+  
     .tablets-container{
-        padding: 0 180px;
+        padding: 0 0;
+    }
+    .input{
+        width: 100%;
+    }
+    .menu-icon i{
+        display: block;
+    }
+    nav ul li{
+        display: none;
+    }
+    .tablet-images{
+        flex-wrap: wrap;
     }
 }
 @media only screen and (max-width:910px)
@@ -270,23 +314,26 @@ nav ul li a:hover{
     label.logo{
         font-size: 18px;
     }
+    .content h1{
+        font-size: 30px;
+    }
+    .sp0{
+        margin-left: 40px;
+    }
+    .sp2{
+        margin-left:97px;
+    }
+    .icon{
+        left: 44%;
+    }
 }
-.content{
-    padding-top: 150px;
-    padding-left: 50px;
-    font-family: 'montserrat';
-    font-size: 35px;
-}
-.sp1{
-    color: red;
-    margin-right: 90px;
-
-}
-.sp2{
-    color: green;
-    margin-left: 167px;
-}
-.sp0{
-    color: blue ;
-    margin-left: 68px;
+@media only screen and (max-width:480px){
+    label.logo{
+        font-size: 18px;
+        margin-left: 5px;
+    }
+    .icon{
+        left: 40%;
+        top: 60px;
+    }
 }
